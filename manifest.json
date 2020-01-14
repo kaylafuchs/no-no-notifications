@@ -1,11 +1,14 @@
 {
     "name": "no no notifications",
     "version": "0.1.0",
-    "description": "hide browser tab notifications because that shit is distracting.",
+    "description": "hide distracting browser tab notifications",
     "permissions": [
         "tabs",
-        "http://*/*",
-        "https://*/*"
+        "*://*.google.com/*"
+    ],
+    "optional_permissions": [
+        "http://*/",
+        "https://*/"
     ],
     "background": {
         "scripts": ["no-no.js"],
