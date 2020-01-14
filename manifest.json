@@ -3,15 +3,22 @@
     "version": "0.1.0",
     "description": "hide browser tab notifications because that shit is distracting.",
     "permissions": [
-        "tabs"
-    ],
-    "optional_permissions": [
+        "tabs",
         "http://*/*",
         "https://*/*"
     ],
     "background": {
         "scripts": ["no-no.js"],
         "persistent": true
+    },
+    "page_action": {
+        "default_icon": "no.png"
+    },
+    "icons": {
+        "16": "no.png",
+        "32": "no.png",
+        "48": "no.png",
+        "128": "no.png"
     },
     "manifest_version": 2
 }
